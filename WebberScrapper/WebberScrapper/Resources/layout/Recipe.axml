@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:stretchColumns="0"
+        android:shrinkColumns="1">
+        <TableRow>
+            <TextView
+                android:id="@+id/recipe_name"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:text="random text string"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <ImageButton
+                android:id="@+id/edit_recipe"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/edit_icon" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.50">
+            <TextView
+                android:id="@+id/ingredient_list"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel pretium magna, vel laoreet est. Curabitur ornare vel ligula nec euismod. Ut euismod nibh eu lectus tristique posuere. Mauris porta tempus sapien, eget scelerisque quam finibus nec. Nam quis fringilla lectus. Pellentesque feugiat cursus massa, ac commodo ex dignissim et. Curabitur eget ligula ut ligula aliquet pretium. Phasellus at libero porttitor, feugiat tortor eget, semper ex. Integer non eleifend justo. Nullam vehicula ac purus vitae mollis. Cras vitae risus dapibus, pellentesque justo sed, tristique mi. Nullam sed auctor enim, sit amet posuere dui. Cras commodo turpis in convallis vehicula. Integer vitae sodales augue. Etiam ultrices nunc pulvinar, mollis nunc dapibus, tristique tortor. Vestibulum et placerat velit.  Nullam consequat, lorem in ultrices blandit, lacus felis porttitor purus, in rhoncus ante ligula ac eros. Nulla id diam auctor, tristique massa molestie, efficitur ipsum. Vestibulum efficitur nisl viverra ornare aliquet. Cras vitae neque luctus, imperdiet dui nec, eleifend eros. Donec egestas, libero eu dignissim fermentum, magna diam posuere lacus, a tempor ex lectus eget neque. Quisque in purus imperdiet, venenatis felis eget, convallis turpis. Nullam metus tortor, consequat at leo a, euismod faucibus arcu. Vivamus suscipit dui sed varius imperdiet. Fusce volutpat mattis tristique.  Ut mollis bibendum felis sit amet viverra. Sed in lacus sed diam auctor consectetur vitae in diam. Etiam ornare mollis felis. Morbi mollis augue in felis consectetur, nec porta justo lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat luctus diam, ut iaculis turpis eleifend eu. Integer rutrum nunc eu ex tristique efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque nec nunc sit amet massa porta euismod eu quis enim. Suspendisse sed consequat elit, blandit efficitur diam. Fusce ut pellentesque augue, in laoreet augue. Nullam et elit nulla. Ut ac eros rhoncus, auctor augue quis, mollis eros. Maecenas vitae orci sed ex tincidunt fermentum et eu nulla. Donec auctor varius tincidunt. Vestibulum laoreet quam et velit commodo fermentum.  Fusce vestibulum pharetra maximus. Cras sed aliquam nisl. Phasellus in nunc commodo, pulvinar risus tincidunt, dictum lacus. Aenean non convallis elit. Nunc imperdiet iaculis ipsum a egestas. Aliquam erat nunc, consequat in aliquet in, commodo id lacus. Integer odio dui, egestas non ex et, vulputate ultrices augue. Aenean a egestas arcu. Proin mollis tempus massa, vel sagittis ex iaculis nec. Nulla facilisi. Nullam malesuada rutrum pharetra.  Phasellus sit amet ante eu tellus viverra interdum. Nullam id dolor eu purus aliquet hendrerit ac quis nibh. Integer odio erat, laoreet eget mi imperdiet, aliquam ultricies risus. Integer ut dictum lectus, eu convallis arcu. Aliquam imperdiet cursus justo, sit amet finibus nisl laoreet in. Vivamus dignissim posuere mollis. Nullam imperdiet dui felis, eu consectetur augue efficitur nec. Donec in felis ac nibh commodo rutrum. Etiam posuere vel arcu et placerat. Sed ultricies lacus vel quam ullamcorper pulvinar. Donec quis nibh erat. Nam at porta metus. Nulla tincidunt urna sit amet risus congue elementum."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </ScrollView>
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.50">
+            <TextView
+                android:id="@+id/direction_list"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel pretium magna, vel laoreet est. Curabitur ornare vel ligula nec euismod. Ut euismod nibh eu lectus tristique posuere. Mauris porta tempus sapien, eget scelerisque quam finibus nec. Nam quis fringilla lectus. Pellentesque feugiat cursus massa, ac commodo ex dignissim et. Curabitur eget ligula ut ligula aliquet pretium. Phasellus at libero porttitor, feugiat tortor eget, semper ex. Integer non eleifend justo. Nullam vehicula ac purus vitae mollis. Cras vitae risus dapibus, pellentesque justo sed, tristique mi. Nullam sed auctor enim, sit amet posuere dui. Cras commodo turpis in convallis vehicula. Integer vitae sodales augue. Etiam ultrices nunc pulvinar, mollis nunc dapibus, tristique tortor. Vestibulum et placerat velit.  Nullam consequat, lorem in ultrices blandit, lacus felis porttitor purus, in rhoncus ante ligula ac eros. Nulla id diam auctor, tristique massa molestie, efficitur ipsum. Vestibulum efficitur nisl viverra ornare aliquet. Cras vitae neque luctus, imperdiet dui nec, eleifend eros. Donec egestas, libero eu dignissim fermentum, magna diam posuere lacus, a tempor ex lectus eget neque. Quisque in purus imperdiet, venenatis felis eget, convallis turpis. Nullam metus tortor, consequat at leo a, euismod faucibus arcu. Vivamus suscipit dui sed varius imperdiet. Fusce volutpat mattis tristique.  Ut mollis bibendum felis sit amet viverra. Sed in lacus sed diam auctor consectetur vitae in diam. Etiam ornare mollis felis. Morbi mollis augue in felis consectetur, nec porta justo lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat luctus diam, ut iaculis turpis eleifend eu. Integer rutrum nunc eu ex tristique efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque nec nunc sit amet massa porta euismod eu quis enim. Suspendisse sed consequat elit, blandit efficitur diam. Fusce ut pellentesque augue, in laoreet augue. Nullam et elit nulla. Ut ac eros rhoncus, auctor augue quis, mollis eros. Maecenas vitae orci sed ex tincidunt fermentum et eu nulla. Donec auctor varius tincidunt. Vestibulum laoreet quam et velit commodo fermentum.  Fusce vestibulum pharetra maximus. Cras sed aliquam nisl. Phasellus in nunc commodo, pulvinar risus tincidunt, dictum lacus. Aenean non convallis elit. Nunc imperdiet iaculis ipsum a egestas. Aliquam erat nunc, consequat in aliquet in, commodo id lacus. Integer odio dui, egestas non ex et, vulputate ultrices augue. Aenean a egestas arcu. Proin mollis tempus massa, vel sagittis ex iaculis nec. Nulla facilisi. Nullam malesuada rutrum pharetra.  Phasellus sit amet ante eu tellus viverra interdum. Nullam id dolor eu purus aliquet hendrerit ac quis nibh. Integer odio erat, laoreet eget mi imperdiet, aliquam ultricies risus. Integer ut dictum lectus, eu convallis arcu. Aliquam imperdiet cursus justo, sit amet finibus nisl laoreet in. Vivamus dignissim posuere mollis. Nullam imperdiet dui felis, eu consectetur augue efficitur nec. Donec in felis ac nibh commodo rutrum. Etiam posuere vel arcu et placerat. Sed ultricies lacus vel quam ullamcorper pulvinar. Donec quis nibh erat. Nam at porta metus. Nulla tincidunt urna sit amet risus congue elementum."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
